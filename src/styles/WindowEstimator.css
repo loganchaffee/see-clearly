@@ -1,0 +1,70 @@
+.WindowEstimator {
+    background: white;
+    width: 95%;
+    max-width: 500px;
+    padding: 10px;
+}
+
+.overview,
+.details,
+.counter {
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+/* Overview */
+h1 {
+    font-weight: 400;
+}
+
+.overview__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+
+.overview__items span {
+    text-align: end; 
+}
+
+/* Details */
+h3 {
+    font-weight: 400;
+    color: grey;
+}
+
+.details__items {
+    display: grid;
+    grid-template-columns: 70% 30%; 
+}
+
+.details__interior-exterior {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.details__price-per-pane {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.details__floors {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.details__ladders {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* Counter */
+
+.counter__items {
+    display: grid;
+    grid-template-columns: 60% 10% 20% 10%;
+}
+
+.counter__button-container {
+    display: flex;
+    justify-content: center;
+}
