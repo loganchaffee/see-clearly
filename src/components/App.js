@@ -1,5 +1,5 @@
-import WindowEstimator from "./WindowEstimator";
-import './styles/App.css'
+import WindowEstimator from "./windowEstimator/WindowEstimator";
+import '../styles/App.css'
 
 function App() {
   return (

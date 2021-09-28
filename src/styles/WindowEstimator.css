@@ -1,16 +1,21 @@
+
 .WindowEstimator {
     background: white;
     width: 95%;
     max-width: 500px;
     padding: 10px;
+    /* border-radius: 5px; */
+    margin: 10px;
 }
 
 .overview,
 .details,
 .counter {
     padding-bottom: 10px;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px dashed lightgray;
 }
+
+/* Header / Overview */
 
 /* Overview */
 h1 {
@@ -33,38 +38,112 @@ h3 {
 }
 
 .details__items {
-    display: grid;
-    grid-template-columns: 70% 30%; 
+    display: flex;
+    flex-direction: column;
 }
 
-.details__interior-exterior {
-    grid-column-start: 1;
-    grid-column-end: 3;
+.details__row {
+    width: 100%;
+    height: 30px;
+    margin: 5px 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
-.details__price-per-pane {
-    grid-column-start: 1;
-    grid-column-end: 3;
+.interior-exterior {
+    display: flex;
 }
 
-.details__floors {
-    grid-column-start: 1;
-    grid-column-end: 3;
+.interior-exterior__checkbox {
+    margin-left: 10px;
 }
 
-.details__ladders {
-    grid-column-start: 1;
-    grid-column-end: 3;
+.details__row select,
+.details__price-input {
+    width: 60%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    appearance: none;
+    display: flex;
+    text-align: center;
+    color: rgb(65, 65, 65);
+    font-weight: 500;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.details label {
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: rgb(65, 65, 65);
+    font-weight: 600;
+}
+
+.interior-exterior label {
+    width: 50%;
+    margin-right: 10px;
+}
+
+
+
+
+
 
 /* Counter */
 
 .counter__items {
-    display: grid;
-    grid-template-columns: 60% 10% 20% 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.counter__row {
+    display: flex;
+    height: 30px;
+    margin: 5px 0px;
+}
+
+.counter label {
+    width: 40%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: rgb(65, 65, 65);
+    font-weight: 600;
+}
+
+.counter input {
+    width: 10%;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    display: flex;
+    text-align: center;
+    color: rgb(65, 65, 65);
+    font-weight: 500;
 }
 
 .counter__button-container {
     display: flex;
     justify-content: center;
+    width: 25%;
+}
+
+.counter__button {
+    background: white;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: rgb(47, 102, 223);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

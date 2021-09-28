@@ -1,6 +1,6 @@
 import { connect } from "react-redux"
 import { useEffect } from "react"
-import { totalSet, estimatedCompletionTimeSet } from "../store/windowEstimatorSlice"
+import { totalSet, estimatedCompletionTimeSet } from "../../store/windowEstimatorSlice"
 
 const Overview = (props) => {
 
@@ -80,7 +80,7 @@ const Overview = (props) => {
             <div className='overview__items'>
                 <label>Total:</label>
                 <span>${props.total}</span>
-                <label>Estimated Completion Time:</label>
+                <label>Completion Time:</label>
                 <span>{props.estimatedCompletionTime}</span>
             </div>
         </div>

@@ -1,10 +1,10 @@
 import React from 'react'
 import { connect } from 'react-redux'
 
-import Overview from './components/Overview'
-import Details from './components/Details'
-import FloorCounter from './components/FloorCounter'
-import './styles/WindowEstimator.css'
+import Overview from './Overview'
+import Details from './Details'
+import FloorCounter from './FloorCounter'
+import '../../styles/WindowEstimator.css'
 
 
 const WindowEstimator = (props) => {
