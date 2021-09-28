@@ -5,7 +5,7 @@
     max-width: 500px;
     padding: 10px;
     /* border-radius: 5px; */
-    margin: 10px;
+    margin: 10px 0px;
 }
 
 .overview,
@@ -165,9 +165,10 @@ input::-webkit-inner-spin-button {
     align-items: center;
 }
 
-@media (maxwidth: 400px) {
+@media only screen and (max-width: 400px) {
     .WindowEstimator {
         width: 100%;
+        margin: 0;
     }
 }
 
