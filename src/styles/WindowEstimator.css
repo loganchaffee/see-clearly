@@ -164,3 +164,10 @@ input::-webkit-inner-spin-button {
     justify-content: center;
     align-items: center;
 }
+
+@media (maxwidth: 400px) {
+    .WindowEstimator {
+        width: 100%;
+    }
+}
+
