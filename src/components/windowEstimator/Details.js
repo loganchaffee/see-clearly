@@ -69,34 +69,39 @@ const Details = (props) => {
 
                 <div className='details__row'>
                     <label>Floors:</label>
-                    <select
-                        type='select'
-                        value={props.numberOfFloors}
-                        onChange={(e) => {
-                            props.numberOfFloorsSet(e.target.value)
-                        }}
-                    >
-                        <option value={1}>1</option>
-                        <option value={2}>2</option>
-                        <option value={3}>3</option>
-                        <option value={4}>4</option>
-                    </select>
+                    <div className='select-container'>
+                        <select
+                            type='select'
+                            value={props.numberOfFloors}
+                            onChange={(e) => {
+                                props.numberOfFloorsSet(e.target.value)
+                            }}
+                        >
+                            <option value={1}>1</option>
+                            <option value={2}>2</option>
+                            <option value={3}>3</option>
+                            <option value={4}>4</option>
+                        </select>
+                    </div>
+                    
                 </div>
 
                 <div className='details__row'>
                     <label>Tallest Ladder:</label>
-                    <select
-                        type='select'
-                        value={props.tallestLadderNeeded}
-                        onChange={(e) => {
-                            props.tallestLadderNeededSet(e.target.value)
-                        }}
-                    >
-                        <option value='24ft'>24ft</option>
-                        <option value='28ft'>28ft</option>
-                        <option value='32ft'>32ft</option>
-                        <option value='40ft'>40ft</option>
-                    </select>
+                    <div className='select-container'>
+                        <select
+                            type='select'
+                            value={props.tallestLadderNeeded}
+                            onChange={(e) => {
+                                props.tallestLadderNeededSet(e.target.value)
+                            }}
+                        >
+                            <option value='24ft'>24ft</option>
+                            <option value='28ft'>28ft</option>
+                            <option value='32ft'>32ft</option>
+                            <option value='40ft'>40ft</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div className='details__row'>

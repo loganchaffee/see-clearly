@@ -59,7 +59,24 @@ h3 {
     margin-left: 10px;
 }
 
-.details__row select,
+.select-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.details__row select {
+    font-size: 15px;
+    border: none;
+    outline: none;
+    appearance: none;
+    display: flex;
+    text-align: center;
+    color: rgb(65, 65, 65);
+    font-weight: 500;
+}
+
+
 .details__price-input {
     width: 60%;
     font-size: 15px;
